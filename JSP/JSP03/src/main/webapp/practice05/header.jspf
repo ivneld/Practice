@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    <%--
+    	.jspf(java server page fragment)
+    	반복사용 되는 파일을 정의할 때 사용 jsp파일에서 include하여 사용
+     --%>
+<br><br><br>
+
+<a href="#">게시판 1</a>
+<a href="#">게시판 2</a>
+<a href="#">게시판 3</a>

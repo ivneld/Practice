@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h2>form 태그</h2>
+	
+	<form action="jspPage.jsp" name="profile" method="get">
+	
+	<!-- 
+	action : form이 전송되는 서버쪽 url
+	name : 서버로 제출된 폼 데이터를 참조하기 위한 이름지정 
+	method : 전송방법 설정. get은 default, post는 데이터를 url에 공개하지 않고 숨겨서 전송
+	 -->
+	 
+	<fieldset>
+		<legend>아이디와 비밀번호</legend>
+	
+	아이디 : <input type="text" name="id" size="10"> <br>
+	비밀번호 : <input type="password" name="pw" size="10"> <br>
+	
+	</fieldset>
+	
+	<label>이름 : <input type="text" name="name" size="10"></label><br>
+	<label>학과 : <input type="text" name="department" size="10"></label><br>
+	
+	
+	추가 내용 입력 : <br>
+	<textarea rows="5" cols="25"></textarea> <br>
+	
+	<input type="submit" value="서버로 전송"><br>
+	<input type="reset">
+	
+	</form>
+</body>
+</html>
