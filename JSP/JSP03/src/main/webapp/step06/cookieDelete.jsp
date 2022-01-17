@@ -8,5 +8,22 @@
 </head>
 <body>
 
+	<%
+		Cookie[] cookies=request.getCookies();
+		
+		for(int i=0; i<cookies.length; i++){
+			String str=cookies[i].getName();
+		
+			if(str.equals("cookieName")){
+				
+				cookies[i].setMaxAge(0);
+				
+				response.addCookie(cookies[i]);
+				out.print("쿠키가 삭제 되었습니다. <br>");
+			}
+		}
+	%>
+	
+	<a href="cookieTest.jsp">쿠키확인</a>
 </body>
 </html>
