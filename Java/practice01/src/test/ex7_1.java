@@ -35,8 +35,8 @@ class SutdaDeck {
 }	//SutdaDeck
 
 class SutdaCard {
-	int num;
-	boolean isKwang;
+	final int num;			//인스턴스변수에서는 생성자에서 초기화를 해도 된다.
+	final boolean isKwang;
 	
 	SutdaCard() {
 		this(1,true);
