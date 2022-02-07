@@ -5,21 +5,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 	<form action="forwardEx.jsp" method="post">
 		이름 : <input type="text" name="name" size="10"> <br>
-		여행할나라 : <select name="area"><br>
-			<option value="jpn">일본</option>
+		여행할 나라 : <select name="nation">
+			<option value="korea">한국</option>
 			<option value="usa">미국</option>
 			<option value="china">중국</option>
-		</selcect>
+			<option value="japan">일본</option>
+		</select>
 		<br>
-		백신접종 여부 <br>
-		<input type="radio" name="vac" value="no">미접종
-		 <input type="radio" name="vac" value="1st">1차
-		<input type="radio" name="vac" value="2nd">2차
-		
+		접종여부 : <input type="radio" name="corona" value="1st">1차
+			<input type="radio" name="corona" value="2nd">2차
+			<input type="radio" name="corona" value="3nd">3차
+			<br>
 		<input type="submit" value="전송">
+		<input type="reset" value="취소">
 	</form>
 </body>
 </html>

@@ -26,4 +26,25 @@
     <!--
     <Manager pathname="" />
     -->
+    
+    <Resource auth="Container" 
+          name="jdbc/oracle" 
+          driverClassName="oracle.jdbc.driver.OracleDriver" 
+          type="javax.sql.DataSource" 
+          url="jdbc:oracle:thin:@localhost:1521:xe" 
+          username="C##JSPUSER"
+          password="jsp123" 
+          loginTimeout="10" 
+          maxActive="50" 
+          maxIdle="20"
+          maxWait="2000" 
+          testOnBorrow="true" />
+          
+          <!-- 
+          	auth : 컨테이너를 자원관리자로 기슐
+          	name : 자원의 이름(변경 가능)
+          	driverClassName : 연결할 데이터베이스에 따른 드라이버 클래스이름
+          	type : 이 리소스를 사용할때 DataSource 타입으로 번환
+          	
+           -->
 </Context>

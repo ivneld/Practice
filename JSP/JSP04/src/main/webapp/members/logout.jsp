@@ -8,8 +8,9 @@
 </head>
 <body>
 
-	<h2>틀렸습니다!!</h2>
-	<a href="formEx.html">처음으로 이동</a>
-
+<%
+	session.invalidate();
+	response.sendRedirect("login.jsp");
+%>
 </body>
 </html>

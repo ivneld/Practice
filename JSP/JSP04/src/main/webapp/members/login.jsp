@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<h2>틀렸습니다!!</h2>
-	<a href="formEx.html">처음으로 이동</a>
-
+	<form action="loginCheck.jsp" method="post">
+		아이디 : <input type="text" name="id"><br>
+		비밀번호 : <input type="password" name="pw"><br>
+		<input type="submit" value="로그인">
+	</form>
 </body>
 </html>
